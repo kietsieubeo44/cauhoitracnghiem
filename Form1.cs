@@ -16,13 +16,11 @@ namespace cauhoitracnghiem
         public Form1()
         {
             InitializeComponent();
-
             danhSachCauHoi = LayDanhSachCauHoiTuDatabase();
             currentIndex = 0;
             HienThiCauHoi(currentIndex);
         }
-
-        private List<CauHoi> LayDanhSachCauHoiTuDatabase()
+        private List<CauHoi> LayDanhSachCauHoiTuDatabase()  
         {
             List<CauHoi> danhSach = new List<CauHoi>();
             string connectionString = "Data Source=LAPTOP_KIET;Initial Catalog=IDName;Integrated Security=True";
